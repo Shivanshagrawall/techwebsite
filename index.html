@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            height: 150px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 2;
+        }
+        .header h2{
+            font-size: 36px;
+        }
+        .header p{
+            font-size: 24px;
+        }
+        .content{
+            height: fit-content;
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 20px;
+        }
+        .contentitem{
+            height: 400px;
+            width: 425px;
+            box-shadow: 2px 2px 5px 2px grey;
+            place-self: center;
+            margin-top: 15px;
+        }
+        .contentitem img{
+            height: 220px;
+            width: 100%;
+        }
+        .gadget{
+            padding: 20px;
+        }
+        .gadget h2:hover{
+            color: blue;
+        }
+        .bottom{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .bottom h4{
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .techbutton{
+            margin-top: 10px;
+            height: 30px;
+            width: 120px;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+        }
+        .techbutton:hover{
+            background-color: orange;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h2>Tech Website</h2>
+            <p>Here You can Buy the Latest Technology</p>
+        </div>
+        <div class="content">
+            <div class="contentitem" id="content1">
+                <img src="mobile.jpg" alt="Mobile">
+                <div class="gadget">
+                    <h2>Mobile</h2>
+                    <br>
+                    <p>Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.</p>
+                    <div class="bottom">
+                        <img src="signup.jpg" alt="logo">
+                        <h4>John Doe</h4>
+                        <input type="button" value="Buy Now" class="techbutton">
+                    </div>
+                </div>
+            </div>
+            <div class="contentitem" id="content2">
+                <img src="Laptop.jpg" alt="Mobile">
+                <div class="gadget">
+                    <h2>Laptop</h2>
+                    <br>
+                    <p>Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.</p>
+                    <div class="bottom">
+                        <img src="signup.jpg" alt="logo">
+                        <h4>John Doe</h4>
+                        <input type="button" value="Buy Now" class="techbutton">
+                    </div>
+                </div>
+            </div>
+            <div class="contentitem" id="content3">
+                <img src="Headphone.jpg" alt="Mobile">
+                <div class="gadget">
+                    <h2>Headphone</h2>
+                    <br>
+                    <p>Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.</p>
+                    <div class="bottom">
+                        <img src="signup.jpg" alt="logo">
+                        <h4>John Doe</h4>
+                        <input type="button" value="Buy Now" class="techbutton">
+                    </div>
+                </div>
+            </div>
+            <div class="contentitem" id="content4">
+                <img src="Smartwatch.jpg" alt="Mobile">
+                <div class="gadget">
+                    <h2>Smartwatch</h2>
+                    <br>
+                    <p>Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.</p>
+                    <div class="bottom">
+                        <img src="signup.jpg" alt="logo">
+                        <h4>John Doe</h4>
+                        <input type="button" value="Buy Now" class="techbutton">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
